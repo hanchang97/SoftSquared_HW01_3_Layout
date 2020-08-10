@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="더보기"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#716E6E"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nimok9797님"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="23dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인계정설정>"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/corner_round"
+        android:backgroundTint="#DFDEDE">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="내 쿠키"
+          android:textSize="18dp"
+          android:layout_marginLeft="45dp"
+          android:layout_gravity="center"
+          android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0개"
+            android:textSize="18dp"
+            android:textColor="#12C51B"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_marginLeft="190dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="충전하기"
+            android:textSize="16dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <GridLayout
+
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:scaleType="fitXY"
+            android:stretchMode = "columnWidth"
+            android:src="@drawable/more_capture1_"
+            android:layout_gravity="center"
+
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more_capture2_"
+            android:scaleType="fitXY"
+            android:stretchMode = "columnWidth"
+            android:layout_gravity="center"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more_capture3_"
+            android:scaleType="fitXY"
+            android:stretchMode = "columnWidth"
+            android:layout_gravity="center"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/more_capture4_"
+            android:scaleType="fitXY"
+            android:stretchMode = "columnWidth"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="쿠키오븐"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="겟짤"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:scaleType="fitXY"
+            android:stretchMode = "columnWidth"
+            android:src="@drawable/more_capture5_"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            />
+
+        <ImageView
+            android:id="@+id/btn_option"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/more_capture6_"
+
+            android:stretchMode="columnWidth" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공지사항"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginTop="3dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+
+            />
+
+    </GridLayout>
+
+
+
+</LinearLayout>

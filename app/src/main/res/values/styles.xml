@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- No Title Bar-->
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+
+    </style>
+
+    <style name = "TabItemTextSize" parent = "Base.Widget.Design.TabLayout">  <!-- 탭 레이아웃 내부 탭 아이템에 들어가는 텍스트 크기 / 색상 조절!-->
+        <item name="android:textSize">11sp</item>
+        <item name = "android:textColor"> #000000</item>
+    </style>
+
+</resources>

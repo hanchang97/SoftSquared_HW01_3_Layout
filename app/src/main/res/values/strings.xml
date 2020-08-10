@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HW01_3_Layout</string>
+
+
+
+    <string name = "back_to_option">&lt; 설정</string>
+    <string name="back_to_home">&lt;  프리드로우</string>
+
+
+</resources>
+

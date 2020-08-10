@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/dialog_linear"
+        android:src="@drawable/on_create_ad"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#494545">
+        <Button
+            android:id="@+id/btn_never"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="#989090"
+            android:textColor="#ffffff"
+            android:text="다시 보지 않기"/>
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#989090"
+            android:textColor="#ffffff"
+            android:text="닫기"/>
+    </LinearLayout>
+
+</RelativeLayout>

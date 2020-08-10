@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/webtoon_top"
+                android:adjustViewBounds="true">
+
+            </ImageView>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabTextAppearance="@style/TabItemTextSize"
+
+                >
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="신작"
+
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="월"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="화"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="수" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="목" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="금" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="토" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="일" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="완결" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_outline"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/webtoon1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/layout_outline"
+                        app:srcCompat="@drawable/webtoon1_capture"
+                        android:onClick="webtoon1Click"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/layout_outline"
+                        app:srcCompat="@drawable/webtoon2_capture" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon3_capture" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="프리드로우"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.90"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="전선욱"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="취사병 전설이 되다"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.96"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="제이로빈/이진수"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="호랑이형님"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.98"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이상규"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon4_capture" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon5_capture"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon6_capture" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="스터디그룹"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.96"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="신형욱/유승연"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="회춘"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.80"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="기안84"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="비질란테"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.98"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CRG/김규삼"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon7_capture" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon8_capture" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon9_capture" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="유미의 세포들"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.93"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이동건"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="초인의 시대"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.97"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="섭이"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="탑코너"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.84"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="윤성/라군"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon10_capture" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon11_capture" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon12_capture" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="민간인 통제구역"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.95"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OSIK"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="공유몽"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.89"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="주신/유령선"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="토끼대왕"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.94"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="김숭늉"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_outline"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/layout_outline"
+                        app:srcCompat="@drawable/webtoon13_capture" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/layout_outline"
+                        app:srcCompat="@drawable/webtoon14_capture" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon15_capture" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="동네몬스터"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.78"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이현민/이세형"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="갓핑크"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.96"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이상신/국중록"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="저무는 해,시린 눈"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.95"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MURO"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_outline"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/layout_outline"
+                        app:srcCompat="@drawable/webtoon16_capture" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/layout_outline"
+                        app:srcCompat="@drawable/webtoon17_capture" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/webtoon18_capture" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="열불 로맨스"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.96"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="홍치"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="나를 바꿔줘"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.74"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이지호/호띠"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_outline">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="언데드"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="★ 9.84"
+                            android:textColor="#D3382C"
+                            android:layout_marginLeft="8dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="김우준"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#C8C8C8">
+            </View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="요즘 뜨는 웹툰이 궁금하다면?"
+                    android:textSize="17sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="급상승 랭킹!"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_round_info_24"
+                    android:layout_marginLeft="45dp"/>
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="3"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="12dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom1_capture"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="주간랭킹 166계단 상승"
+                                android:textColor="#02D136"
+                                android:layout_weight="1"
+                                android:layout_marginTop="17dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="안녕, 이바다씨"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="문나영"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon14_capture"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="2"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="주간랭킹 165계단 상승"
+                                android:textColor="#02D136"
+                                android:layout_weight="1"
+                                android:layout_marginTop="17dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="갓핑크"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="이상신/국중록"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon8_capture"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="3"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="주간랭킹 153계단 상승"
+                                android:textColor="#02D136"
+                                android:layout_weight="1"
+                                android:layout_marginTop="17dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="초인의 시대"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="섭이"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="3"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom2_capture"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="4"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="주간랭킹 134계단 상승"
+                                android:textColor="#02D136"
+                                android:layout_weight="1"
+                                android:layout_marginTop="17dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="드로잉 레시피"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="꼬모소이"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom3_capture"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="5"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="주간랭킹 112계단 상승"
+                                android:textColor="#02D136"
+                                android:layout_weight="1"
+                                android:layout_marginTop="17dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="고래별"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="나윤희"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom4_capture"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="6"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="주간랭킹 89계단 상승"
+                                android:textColor="#02D136"
+                                android:layout_weight="1"
+                                android:layout_marginTop="17dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="롤랑롤랑"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="자유"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="3"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom5_capture"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="7"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="26dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="광해의 연인"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="유오디아/러시"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom6_capture"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="8"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="36dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="합격시켜주세용"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="이온"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom7_capture"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="9"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="36dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="현혹"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="홍작가"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+
+                    </GridLayout>
+
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="3"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom8_capture"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="10"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="26dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="별이삼샵"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="혀노"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom9_capture"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="11"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="36dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="밤하늘에 구름운"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="견지/그리온"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="107dp"
+                            android:background="@drawable/corner_round"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/webtoon_bottom10_capture"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="12"
+                            android:textColor="#000000"
+                            android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="36dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="금혼령-조선혼인금지령"
+                                android:textSize="17dp"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:text="천지혜/산책"
+                                android:textColor="#000000"
+                                android:layout_weight="1"
+                                android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+
+
+                    </GridLayout>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="227dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_edit"
+                    android:bufferType="spannable"
+                    android:drawableLeft="@drawable/ic_baseline_refresh_24"
+                    android:drawablePadding="1dp"
+                    android:text="다른 추천도 준비했어요! 1/4">
+
+
+                </Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
